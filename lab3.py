@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from scipy import stats
-file_path = r"C:\Users\Keshava\Downloads\Inc_Exp_Data - Inc_Exp_Data.pdf"
+file_path = r"C:\Users\Keshava\Downloads\Inc_Exp_Data - Inc_Exp_Data.csv"
 df = pd.read_csv(file_path)
 num_cols = ["Mthly_HH_Income","Mthly_HH_Expense","Emi_or_Rent_Amt",
             "Annual_HH_Income","No_of_Fly_Members","No_of_Earning_Members"]
@@ -84,3 +84,4 @@ print("Outliers in Monthly Income:")
 print(outliers_df)
 print(f"Correlation (Income vs Expense): {corr_income_expense:.2f}")
 print(f"Correlation (No_of_Earning_Members vs Income): {corr_earningmembers_income:.2f}")
+
